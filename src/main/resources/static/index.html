@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, initial-scale=1.0">
+    <title>URL Shortener</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+<div class="container">
+
+    <div class="card">
+
+        <h1>URL Shortener</h1>
+
+        <p class="subtitle">
+
+            Transform long URLs into clean short links
+
+        </p>
+
+        <input
+                id="urlInput"
+                type="text"
+                placeholder="Paste your URL here..."
+        >
+
+        <input
+                id="customCodeInput"
+                type="text"
+                placeholder="Custom short code (optional)"
+        />
+
+        <button onclick="shortenUrl()">
+
+            Shorten URL
+
+        </button>
+
+        <div
+                id="result"
+                class="result hidden">
+
+            <h3>Your Short URL</h3>
+
+            <a
+                    id="shortLink"
+                    target="_blank">
+
+            </a>
+
+        </div>
+
+    </div>
+
+</div>
+
+<script src="script.js"></script>
+
+</body>
+</html>
